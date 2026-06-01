@@ -62,19 +62,14 @@ LDAP/Lightweight Directory Access protocol:
     2) server verifies credentials
     3) server returns success or failure
   
-  Ports:
+  Ports: 
+    LDAP (unencrypted):Standard LDAP traffic port 389 
   
-  | Protocol                          | Port | Description           |
+    LDAPS (LDAP over SSL/TLS):Encrypted secure LDAP port 636 
   
-  | --------------------------------- | ---- | --------------------- |
+    Global Catalog (Active Directory):Search across domains port 3268 
   
-  | LDAP (unencrypted)                | 389  | Standard LDAP traffic |
-  
-  | LDAPS (LDAP over SSL/TLS)         | 636  | Encrypted secure LDAP |
-  
-  | Global Catalog (Active Directory) | 3268 | Search across domains |
-  
-  | Global Catalog (SSL)              | 3269 | Secure global catalog |
+    Global Catalog (SSL):Secure global catalog port 3269 
 
   LDAP vs LDAPS:
   
