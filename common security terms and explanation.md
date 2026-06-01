@@ -17,28 +17,44 @@ LDAP/Lightweight Directory Access protocol:
   Definition: A protocol used to access and manage directory information (users,groups,permissions)
   
   How it works:
+   
     1) Client connects to an LDAP server
+    
     2) The clients performs a bind operation(authentication attempt)
+    
     3) The server checks credentials against the directory database
+    
     4) If valid, the client is authenticated
+    
     5) The client can then query or modify direcotry entries
   
   Tree-based structure called DIT/Directory information tree:
     dc=company,dc=com
+     
      ├── ou=users
+     
      │    ├── cn=John Doe
+     
      │    └── cn=Alice Smith
+     
      ├── ou=groups
+     
      └── ou=devices
   
   Key components:
+    
     DN/Distinguished name: full path to an entry
+    
     CN/common name: user or object name
+    
     OU/Organization unit: groups like users,admins, devices
+    
     DC/Domain component: domain structure
   
   Types of bind:
+    
     simple bind: username+ password
+    
     SASL bind more secure authentication framework
   
   Flow:
@@ -47,11 +63,17 @@ LDAP/Lightweight Directory Access protocol:
     3) server returns success or failure
   
   Ports:
+  
   | Protocol                          | Port | Description           |
+  
   | --------------------------------- | ---- | --------------------- |
+  
   | LDAP (unencrypted)                | 389  | Standard LDAP traffic |
+  
   | LDAPS (LDAP over SSL/TLS)         | 636  | Encrypted secure LDAP |
+  
   | Global Catalog (Active Directory) | 3268 | Search across domains |
+  
   | Global Catalog (SSL)              | 3269 | Secure global catalog |
 
   LDAP vs LDAPS:
