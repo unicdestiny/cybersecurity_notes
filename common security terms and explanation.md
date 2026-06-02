@@ -12,8 +12,14 @@ DAC/Discretionary access control: owner of resource decides who gets access to i
 
 MAC/Mandatory access control: rights about files and resources are given by file system
 
-LDAP/Lightweight Directory Access protocol:
-Radius: authentication system
-TACACS+: admin authentication
-FIDO2: passwordless authentication
-PIV/CAC: smart card authentication
+LDAP/Lightweight Directory Access protocol: is an open, vendor-neutral application protocol used to access and manage directory information services over an IP network.
+
+RADIUS: A network protocol used for centralized authentication, authorization, and accounting (AAA) of users accessing a network.
+
+TACACS+: A Cisco-developed AAA protocol used for centralized authentication, authorization, and accounting, mainly for managing administrative access to network devices.
+
+FIDO2: A passwordless authentication standard that uses public key cryptography to allow secure login using devices or biometrics instead of passwords.
+
+PIV/Personal Identity Verification: A U.S. federal goverment smart card standard used for secure identification and authentication of employees and contractors
+
+CAC/Common access cards: a smart card used by the U.S. department of defense to provide secure identification, authentication, and access to systems and facilities.
